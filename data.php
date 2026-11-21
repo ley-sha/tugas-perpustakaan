@@ -1,7 +1,7 @@
 <?php
 require_once "koneksi.php";
 
-$sql = "SELECT * FROM anggota ORDER BY id DESC";
+$sql = "SELECT * FROM anggota ORDER BY id ASC";
 $hasil = mysqli_query($koneksi, $sql);
 
 $jumlah = mysqli_num_rows($hasil);
